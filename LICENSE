@@ -1,0 +1,25 @@
+
+---
+
+### ⚙️ Commands to Set Up Locally
+
+```bash
+mkdir sequencing-plus && cd sequencing-plus
+git init
+
+# Create directories
+mkdir -p data notebooks sequencing_plus tests
+
+# Initialize key files
+touch sequencing_plus/__init__.py
+touch sequencing_plus/pipeline.py
+touch sequencing_plus/metrics.py
+touch sequencing_plus/utils.py
+touch requirements.txt .gitignore README.md LICENSE
+
+# Recommended gitignore entries
+echo -e "data/\n__pycache__/\n*.pyc\n.ipynb_checkpoints/" > .gitignore
+
+# Initialize Git
+git add .
+git commit -m "Initial commit: project structure and boilerplate"
